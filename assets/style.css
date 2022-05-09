@@ -1,0 +1,65 @@
+/* universal selector */
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* id selectors */
+#highscores {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 1em;
+  clear: both;
+  color: purple;
+}
+
+#timer {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 1em;
+  clear: both;
+}
+
+/* class selectors */
+.grid {
+  display: inline-grid;
+}
+
+.score-button {
+  background-color: purple;
+  border-color: purple;
+  color: white;
+  font-weight: bold;
+  padding: 3px 6px;
+  margin-bottom: 4px;
+}
+
+.start-button {
+  background-color: purple;
+  border-color: purple;
+  color: white;
+  font-weight: bold;
+  padding: 3px 6px;
+  margin-bottom: 4px;
+}
+
+.q-button {
+  background-color: purple;
+  border-color: purple;
+  color: white;
+  font-weight: bold;
+  padding: 3px 6px;
+  margin-bottom: 4px;
+}
+.top-container {
+  position: relative;
+  width: 100%;
+  margin-top: 0.5em;
+  font-size: 24px;
+  height: 40px;
+  font-weight: bolder;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Coding Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+
+</head>
+
+<body>
+    <!-- View highscore and Timer -->
+    <div class="top-container">
+        <span id="highscores"><button>View Highscores</button></span>
+        <span id="timer">Time: 0</span>
+    </div>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div id="content" class="col-sm-6">
+                <header id="questionTitle">
+                    <h1>Coding Quiz Challenge</h1>
+                    <p>Try to answer the following code-related questions within the time limit. Keep
+                        in mind that incorrect
+                        answers will penalize yuour score/time by ten seconds.</p>
+                </header>
+                <div id="questionOptions" class="grid">
+                    <button id="optionA" class="q-button"></button>
+                    <button id="optionB" class="q-button"></button>
+                    <button id="optionC" class="q-button"></button>
+                    <button id="optionD" class="q-button"></button>
+                </div>
+                <div id="hs-intials">
+                    <p>Please enter your intials</p>
+                    <input type="text" id="initialsInput">
+                    <button id="scoreButton" class="score-button">Submit</button>
+
+                </div>
+
+                <p id="answerResponse"></p>
+                <button id="start-button" type="button" class="start-button">Start Quiz</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./assets/script.js">
+    </script>
+</body>
+
+</html>
