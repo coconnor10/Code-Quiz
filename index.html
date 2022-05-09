@@ -22,26 +22,35 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div id="content" class="col-sm-6">
+                <!-- hiscore title hidden at start -->
+                <div id="hiScoreTitle">
+                    <h1>Highscores</h1>
+                </div>
+                <!-- quiz intro content -->
                 <header id="questionTitle">
                     <h1>Coding Quiz Challenge</h1>
+
                     <p>Try to answer the following code-related questions within the time limit. Keep
                         in mind that incorrect
                         answers will penalize yuour score/time by ten seconds.</p>
                 </header>
+                <!-- quiz question and choices -->
                 <div id="questionOptions" class="grid">
                     <button id="optionA" class="q-button"></button>
                     <button id="optionB" class="q-button"></button>
                     <button id="optionC" class="q-button"></button>
                     <button id="optionD" class="q-button"></button>
                 </div>
+                <!-- enter intials for highscores -->
                 <div id="hs-intials">
                     <p>Please enter your intials</p>
                     <input type="text" id="initialsInput">
                     <button id="scoreButton" class="score-button">Submit</button>
 
                 </div>
-
+                <!-- correct or wrong response -->
                 <p id="answerResponse"></p>
+                <!-- start quiz button -->
                 <button id="start-button" type="button" class="start-button">Start Quiz</button>
             </div>
 

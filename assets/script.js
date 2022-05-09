@@ -13,6 +13,7 @@ var answerResponseEl = document.getElementById("answerResponse");
 var scoreButtonEl = document.getElementById("scoreButton");
 var initialsEl = document.getElementById("initialsInput");
 var hsInitialsEl = document.getElementById("hs-intials");
+var hiScoreTitle = document.getElementById("hiScoreTitle");
 
 // other variables
 var secondsLeft = 75;
@@ -26,6 +27,7 @@ hsInitialsEl.hidden = true;
 questionOptionsEl.hidden = true;
 scoreButtonEl.hidden = true;
 initialsEl.hidden = true;
+hiScoreTitle.hidden = true;
 
 // questions variable
 var questions = [
@@ -92,6 +94,7 @@ startButtonEl.addEventListener("click", function setTime() {
   questionTitleEl.hidden = true;
   startButtonEl.hidden = true;
   questionOptionsEl.hidden = false;
+  hiScoreTitle.hidden = true;
 
   showQuiz();
 });
@@ -170,6 +173,7 @@ function showHighScores() {
   answerResponseEl.hidden = true;
   scoreButtonEl.hidden = true;
   initialsEl.hidden = true;
+  hiScoreTitle.hidden = false;
 
   var getInitials = document.getElementById("initialsInput").value;
 
@@ -187,9 +191,15 @@ function showHighScores() {
 // event listener on score button to show high scores
 scoreButtonEl.addEventListener("click", function () {
   showHighScores();
+  hsInitialsEl.hidden = true;
+  hiScoreTitle.hidden = false;
+  startButtonEl.hidden = false;
 });
 
 // event listener on "View Highscores" to show high scores
 highscoresEl.addEventListener("click", function () {
   showHighScores();
+  hsInitialsEl.hidden = true;
+  hiScoreTitle.hidden = false;
+  startButtonEl.hidden = false;
 });
